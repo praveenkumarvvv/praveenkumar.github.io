@@ -2,68 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praveenkumar V | Java Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Praveenkumar V</h1>
-    <p>Java Full Stack Developer</p>
+<header>
+  <h1 data-aos="fade-down">Praveenkumar V</h1>
+  <p data-aos="fade-up">Java Full Stack Developer</p>
+
+  <div class="header-buttons" data-aos="zoom-in">
     <a href="#contact" class="btn">Contact Me</a>
-  </header>
+    <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+  </div>
+</header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      BSc Computer Science graduate passionate about building scalable web applications 
-      using Java, Spring Boot, React and MySQL. Seeking entry-level developer role.
-    </p>
-  </section>
+<section class="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <p>
+    BSc Computer Science graduate passionate about building scalable web applications 
+    using Java, Spring Boot, React and MySQL. Seeking entry-level developer role.
+  </p>
+</section>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>React</span>
-      <span>TypeScript</span>
-      <span>MySQL</span>
-      <span>MongoDB</span>
-      <span>Git & GitHub</span>
-    </div>
-  </section>
+<section class="skills" data-aos="fade-left">
+  <h2>Skills</h2>
+  <div class="skill-box">
+    <span>Java</span>
+    <span>Spring Boot</span>
+    <span>React</span>
+    <span>TypeScript</span>
+    <span>MySQL</span>
+    <span>MongoDB</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
 
-  <section class="projects">
-    <h2>Projects</h2>
+<section class="projects">
+  <h2 data-aos="fade-up">Projects</h2>
 
-    <div class="project-card">
-      <h3>Bank Management System</h3>
-      <p>Java + MySQL based application for managing customer accounts and transactions.</p>
-    </div>
+  <div class="project-card" data-aos="zoom-in">
+    <h3>Bank Management System</h3>
+    <p>Java + MySQL application for managing customer accounts and transactions.</p>
+    <a href="#" class="btn-small">View Code</a>
+  </div>
 
-    <div class="project-card">
-      <h3>Smart City Management</h3>
-      <p>Web application for managing city services with admin and user dashboard.</p>
-    </div>
+  <div class="project-card" data-aos="zoom-in">
+    <h3>Smart City Management</h3>
+    <p>Web application for managing city services with admin dashboard.</p>
+    <a href="#" class="btn-small">View Code</a>
+  </div>
 
-    <div class="project-card">
-      <h3>Online DJ Booking System</h3>
-      <p>Full stack platform for booking DJs with secure login and booking management.</p>
-    </div>
+  <div class="project-card" data-aos="zoom-in">
+    <h3>Online DJ Booking System</h3>
+    <p>Full stack booking platform with secure login and booking management.</p>
+    <a href="#" class="btn-small">View Code</a>
+  </div>
+</section>
 
-  </section>
+<section class="contact" id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
+  <p>Phone: +91 XXXXX XXXXX</p>
+  <p>GitHub: github.com/yourusername</p>
+</section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourmail@gmail.com</p>
-    <p>Phone: +91 XXXXX XXXXX</p>
-    <p>GitHub: github.com/yourusername</p>
-  </section>
+<footer>
+  <p>© 2026 Praveenkumar V | All Rights Reserved</p>
+</footer>
 
-  <footer>
-    <p>© 2026 Praveenkumar V | All Rights Reserved</p>
-  </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
