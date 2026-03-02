@@ -48,10 +48,19 @@
   </div>
 </div>
 </section>
+  <div class="filter-buttons">
+  <button onclick="filterProjects('all')">All</button>
+  <button onclick="filterProjects('java')">Java</button>
+  <button onclick="filterProjects('react')">React</button>
+</div>
 
 <section class="projects">
   <h2 data-aos="fade-up">Projects</h2>
-
+<div class="filter-buttons">
+  <button onclick="filterProjects('all')">All</button>
+  <button onclick="filterProjects('java')">Java</button>
+  <button onclick="filterProjects('react')">React</button>
+</div>
   <div class="project-card" data-aos="zoom-in">
     <h3>Bank Management System</h3>
     <p>Java + MySQL application for managing customer accounts and transactions.</p>
@@ -69,6 +78,7 @@
     <p>Full stack booking platform with secure login and booking management.</p>
     <a href="#" class="btn-small">View Code</a>
   </div>
+  <div class="project-card java">
 </section>
 
 <section class="contact" id="contact" data-aos="fade-up">
@@ -110,6 +120,18 @@
                        this)
         .then(() => alert("Message Sent Successfully!"));
     });
+</script>
+  <script>
+function filterProjects(category) {
+  const projects = document.querySelectorAll(".project-card");
+  projects.forEach(project => {
+    if (category === "all" || project.classList.contains(category)) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  });
+}
 </script>
 <script>
   AOS.init({
